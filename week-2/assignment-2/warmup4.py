@@ -1,7 +1,6 @@
 coffee = input("How much was your coffee?")
 coffee_price = float(coffee)
 tax = input("How much was the tax?")
-tax_price = float(tax)
 total = coffee_price + tax_price
 print(f"Your total is {total}.")
 
