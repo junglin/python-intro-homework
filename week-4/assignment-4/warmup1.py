@@ -8,7 +8,7 @@ print(f"First: {numbers[0]}")
 print(f"Last: {numbers[-1]}")
 
 #A slice containing only the middle four items
-print(f"Middle: {numbers[2:5]}")
+print(f"Middle: {numbers[2:6]}")
 
 #The full list in reverse order
 print(f"Reversed: {numbers[::-1]}")

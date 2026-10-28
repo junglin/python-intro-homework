@@ -6,8 +6,8 @@ students = [
     {"name": "Priya",   "score": 95, "subject": "Data"},
     {"name": "Devon",   "score": 72, "subject": "Python"},
     {"name": "Mia",     "score": 83, "subject": "Web"},
-    {"name": "Eli",     "score": 79, "subject": "Data"},
-
+    {"name": "Eli",     "score": 79, "subject": "Data"},]
+    
 # Find the top scorer
 highest_score = 0
 highest_scoring_student = ""

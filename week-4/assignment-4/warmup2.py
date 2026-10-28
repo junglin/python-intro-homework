@@ -3,7 +3,7 @@
 student = {
     "name": "wendy",
     "grade": 12,
-    "subjects": ["calculus, american government, chemistry"]
+    "subjects": ["calculus", "american government", "chemistry"]
 }
 
 #Print each key-value pair using .items() in a for loop
