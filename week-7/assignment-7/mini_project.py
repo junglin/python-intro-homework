@@ -33,17 +33,19 @@ with open('../data/expenses.csv', 'r') as file:
     print(f"Total amount spent on Food: ${total_value:.2f}")
 
 #6. Write a report to food_report.txt with this structure:
+from datetime import datetime
 
-with open('food_report.txt', 'w', newline='') as file:
-    writer = csv.writer(file)
-    #First line: Food Expense Report — generated [today's date as "Month DD, YYYY"]
-    from datetime import datetime
+with open('food_report.txt', 'w') as file:
     now = datetime.now()
-    writer.writerow([f'Food Expense Report — generated {now.strftime("%B %d, %Y")}'])
+
+#First line: Food Expense Report — generated [today's date as "Month DD, YYYY"]
+    file.write(f'Food Expense Report — generated {now.strftime("%B %d, %Y")}\n')
+
 #One line per food expense: [date]: $[amount]
     for row in food_filter:
-        writer.writerow([f"{row['date']}: ${row['amount']}"])    
+        file.write(f'{row['date']}: ${row['amount']:.2f}\n')  
+
 #Last line: Total: $[total to 2 decimal places]
-    writer.writerow([f"Total: ${total_value:.2f}"])   
+    file.write(f"Total: ${total_value:.2f}\n")   
    
 
